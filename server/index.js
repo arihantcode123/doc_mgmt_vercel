@@ -29,7 +29,7 @@ app.use(cors(corsOption));
 app.use(express.json())
 app.use('/',(req,res)=>{
     res.send("Server is running")
-}
+})
 app.use('/api/auth',authRoute)
 app.use('/api',uploadRoute)
 app.use('/api',userRoute)
