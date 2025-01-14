@@ -27,7 +27,7 @@ export default function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:5000/api/auth/register", {
+            const response = await fetch("https://doc-mgmt-server-coytre25g-arihant-jains-projects-6d88f2d0.vercel.app/api/auth/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

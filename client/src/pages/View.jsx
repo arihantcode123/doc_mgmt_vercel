@@ -13,7 +13,7 @@ export default function View() {
 
     const fetchDocument = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/api/fetchOneDocument/${id}`, {
+            const response = await fetch(`https://doc-mgmt-server-coytre25g-arihant-jains-projects-6d88f2d0.vercel.app/api/fetchOneDocument/${id}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",

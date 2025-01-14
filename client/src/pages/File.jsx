@@ -28,7 +28,7 @@ export default function File() {
 
     try {
       // Send DELETE request to the server
-      const response = await fetch(`http://localhost:5000/api/deleteDocument/${id}`, {
+      const response = await fetch(`https://doc-mgmt-server-coytre25g-arihant-jains-projects-6d88f2d0.vercel.app/api/deleteDocument/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -62,7 +62,7 @@ export default function File() {
     const fetchDocuments = async () => {
       if (!userEmail.email) return; // Wait until userEmail is updated
       try {
-        const response = await fetch("http://localhost:5000/api/fetchAllDocument", {
+        const response = await fetch("https://doc-mgmt-server-coytre25g-arihant-jains-projects-6d88f2d0.vercel.app/api/fetchAllDocument", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

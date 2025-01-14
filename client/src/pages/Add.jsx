@@ -44,7 +44,7 @@ export default function Add() {
         formData.append("document", Item.document);
     
         try {
-            const response = await fetch("https://document-management-app-pwr7.onrender.com/api/uploadFile", {
+            const response = await fetch("https://doc-mgmt-server-coytre25g-arihant-jains-projects-6d88f2d0.vercel.app/api/uploadFile", {
                 method: "POST",
                 body: formData, // Send FormData
             });
